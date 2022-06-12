@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="./Assets/Styles/app.css?v=<?php echo time(); ?>">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css?v=<?php echo time(); ?>"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css?v=<?php echo time(); ?>"/>
 </head>
 <body>
     <div class="app">
@@ -37,6 +35,5 @@
                         </a>
                    </div>
                 </div>
-                <?php include_once('Slider.php') ?>
             </div>
         </header>
