@@ -32,6 +32,7 @@ html {
 
 .header-top-right {
     justify-content: flex-end;
+    flex: 1;
 }
 
 .logo {
@@ -53,12 +54,17 @@ html {
 }
 
 .navbar-link {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
     color: var(--text-white);
     font-weight: bold;
     padding: 18px 40px;
     text-decoration: none;
+}
+
+.navbar-text {
+    margin-left: 5px;
 }
 
 .search {
@@ -71,17 +77,31 @@ html {
     padding: 10px 20px;
     outline: none;
     border: none;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 .search button {
-    padding: 10px 20px;
+    padding: 10px   ;
     border: none;
     outline: none;
     font-weight: bold;
     font-size: 1.5rem;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+.login-text {
+    margin-left: 5px;
 }
