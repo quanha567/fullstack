@@ -10,6 +10,7 @@
 :root {
   --primary-color: #181821;
   --text-white: #fff;
+  --secondary-color: #f05123;
 }
 
 html {
@@ -133,7 +134,7 @@ html {
 }
 
 .box {
-  margin-bottom: 50px;
+  margin: 30px 0 50px;
 }
 
 .box-title {
@@ -145,7 +146,7 @@ html {
 .box-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px 10px;
+  grid-gap: 20px 20px;
 }
 
 .box-items {
@@ -217,6 +218,237 @@ html {
   align-items: center;
 }
 
+.box-items__count span {
+  margin-left: 5px;
+}
+
+.cource-head {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+
+.cource-desc {
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 20px 20px;
+}
+
+.intro-box {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.intro-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.intro-desc p {
+  font-size: 1.6rem;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.intro-desc img {
+  display: block;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 100rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.community {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.community-left {
+  flex-basis: 50%;
+}
+
+.community-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.community-desc {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.community-btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: var(--primary-color);
+}
+
+.community-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+
+.community-right img {
+  display: block;
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+/* cource */
+.row  {
+  display: flex;
+  margin: 40px 0 80px;
+}
+
+
+.col-8 {
+  width: 60%;
+  padding-right: 50px;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.cource-head {
+  font-size: 4rem;
+}
+
+.cource-descript {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+.cource-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cource-result {
+  margin-bottom: 30px;
+}
+
+.cource-result__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 20px;
+  list-style-type: none;
+}
+
+.cource-result__item {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.cource-result__item ion-icon {
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.cource-content__list {
+  list-style-type: none;
+}
+
+.cource-content__item {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 30px 15px 40px;
+  margin: 10px 0;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.cource-content__item::before {
+  content: "+";
+  color: var(--secondary-color);
+  display: block;
+  position: absolute;
+  left: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.cource-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cource-info__fee {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cource-info__btn {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  padding: 10px 30px;
+}
+
+.cource-info__list {
+  list-style-type: none;
+}
+
+.cource-info__item {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.cource-info__text {
+  margin-left: 5px;
+}
 /* footer */
 
 .footer {
